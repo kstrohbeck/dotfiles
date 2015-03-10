@@ -10,8 +10,6 @@ execute pathogen#infect('packages/{}')
 " Get the right colors
 set t_Co=256
 set background=dark
-colorscheme base16-default
-autocmd VimEnter * CSApprox
 
 " Reselect visual block after indent/outdent.
 vnoremap < <gv
@@ -19,3 +17,7 @@ vnoremap > >gv
 
 " Set leader stuff.
 let mapleader=','
+
+" Use after to set stuff that needs to be done on load.
+autocmd VimEnter * :CSApprox
+autocmd VimEnter * :colorscheme base16-default
