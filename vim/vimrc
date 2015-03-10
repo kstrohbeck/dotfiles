@@ -1,0 +1,7 @@
+set nocompatible
+
+let mapleader = ','
+
+" Reselect visual block after indent/outdent
+vnoremap < <gv
+vnoremap > >gv
