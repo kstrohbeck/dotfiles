@@ -1,7 +1,21 @@
+" Basics.
 set nocompatible
+set encoding=utf-8
 
-let mapleader = ','
+" This is where we'll use pathogen / vundle to load packages.
+let &runtimepath.=','.expand('<sfile>:p:h')
+runtime packages/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect('packages/{}')
 
-" Reselect visual block after indent/outdent
+" Get the right colors
+set t_Co=256
+set background=dark
+colorscheme base16-default
+autocmd VimEnter * CSApprox
+
+" Reselect visual block after indent/outdent.
 vnoremap < <gv
 vnoremap > >gv
+
+" Set leader stuff.
+let mapleader=','

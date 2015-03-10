@@ -38,6 +38,8 @@ def install(vimrc_path = '~/.vimrc'):
     with file(full_vimrc_path, 'w') as vimrc:
         vimrc.write(get_redirect() + old_content) 
 
+    # Next, we have to get Vundle.
+
 
 def uninstall():
     """Remove an install from the local vimrc."""
