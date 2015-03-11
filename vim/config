@@ -5,7 +5,7 @@ set nocompatible                                " Always have to do this first.
 " =============================================================================
 
 let &runtimepath.=','.expand('<sfile>:p:h')      " Add cwd to the runtime path.
-runtime packages/vim-pathogen/autoload/pathogen.vim        " Start up pathogen.
+runtime packages/pathogen/autoload/pathogen.vim        " Start up pathogen.
 call pathogen#infect('packages/{}')
 call pathogen#helptags()
 
