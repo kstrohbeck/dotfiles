@@ -1,34 +1,52 @@
-" Prep for loading packages. 
-set nocompatible
+set nocompatible                                " Always have to do this first.
 
-" Add this config's path to the runtimepath.
-let &runtimepath.=','.expand('<sfile>:p:h')
-" Start up pathogen.
-runtime packages/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect('packages/{}')
+" =============================================================================
+"   Packages
+" =============================================================================
+
+let &runtimepath.=','.expand('<sfile>:p:h')      " Add cwd to the runtime path.
+runtime packages/vim-pathogen/autoload/pathogen.vim        " Start up pathogen.
+call pathogen#infect('packages/{}')
+call pathogen#helptags()
+
+" =============================================================================
+"   General
+" =============================================================================
 
 set encoding=utf-8
-" Show the line number column.
-set number
-" Color in columns 80 to 100.
-let &colorcolumn=join(range(80,100),',')
-" Make vim highlight bad whitespace
-set list
-" Set characters to represent bad whitespace.
-set listchars=tab:»»,trail:·,nbsp:~
-" Set up tabs properly.
+filetype plugin indent on       " Make sure that the filetype stuff is working.
+set hidden                " allows buffers to stay open even when not in focus.
+
+set number                                       " Show the line number column.
+let &colorcolumn=join(range(80,100),',')          " Color in columns 80 to 100.
+set list                                   " Make vim highlight bad whitespace.
+set listchars=tab:»»,trail:·,nbsp:~   " Set characters to represent whitespace.
+
+set nowrap
+set linebreak
+
+set nobackup
+set noswapfile
+
+" Set pastetoggle?
+
+" =============================================================================
+"   Indentation
+" =============================================================================
+
+set smartindent
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
 
-" ----------------------------------------------------------------------------
-"  Mappings
-" ----------------------------------------------------------------------------
+" =============================================================================
+"   Mappings
+" =============================================================================
 
 " Get rid of arrow keys.
 noremap <Up> <Nop>
 noremap <Down> <Nop>
-" And in insert mode.
 noremap! <Up> <Nop>
 noremap! <Down> <Nop>
 noremap! <Left> <Nop>
@@ -37,7 +55,6 @@ noremap! <Right> <Nop>
 " Use left/right arrows for buffer movement (for now).
 noremap <silent> <Left> :bp<CR>
 noremap <silent> <Right> :bn<CR>
-" And in insert mode.
 noremap! <silent> <Left> <Esc>:bp<CR>
 noremap! <silent> <Left> <Esc>:bn<CR>
 
@@ -56,11 +73,24 @@ noremap ; :
 vnoremap < <gv
 vnoremap > >gv
 
-" Set leader stuff.
+" Format paragraphs
+vmap Q gq
+nmap Q gqap
+
+" Allow sudo editing
+cmap w!! %!sudo tee > /dev/null %
+
+" =============================================================================
+"   Leader
+" =============================================================================
+
 let mapleader=','
 
-" Set vim to 256 color mode
-set t_Co=256
+" =============================================================================
+"   Miscellaneous
+" =============================================================================
+
+set t_Co=256                                        " Set vim to 256 color mode
 set background=dark
 
 " Use after to set stuff that needs to be done on load.
