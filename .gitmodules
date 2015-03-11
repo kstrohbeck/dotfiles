@@ -19,3 +19,6 @@
 [submodule "vim/repeat"]
 	path = vim/packages/repeat
 	url = https://github.com/tpope/vim-repeat
+[submodule "vim/numbers"]
+	path = vim/packages/numbers
+	url = https://github.com/myusuf3/numbers.vim
