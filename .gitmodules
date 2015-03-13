@@ -25,3 +25,6 @@
 [submodule "fish/virtualfish"]
 	path = fish/packages/virtualfish
 	url = https://github.com/adambrenecki/virtualfish
+[submodule "vim/fish"]
+	path = vim/packages/fish
+	url = https://github.com/dag/vim-fish
