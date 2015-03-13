@@ -94,6 +94,12 @@ set t_Co=256                                        " Set vim to 256 color mode
 set background=dark
 
 autocmd BufRead */vim/config set filetype=vim        " Get syntax on this vimrc
+autocmd BufRead */fish/config set filetype=fish
+
+" We can't use fish, because it isn't POSIX compliant.
+if &shell =~# 'fish$'
+    set shell=sh
+endif
 
 " Use after to set stuff that needs to be done on load.
 autocmd VimEnter * :colorscheme base16-default
