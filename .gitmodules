@@ -28,3 +28,6 @@
 [submodule "vim/fish"]
 	path = vim/packages/fish
 	url = https://github.com/dag/vim-fish
+[submodule "vim/syntastic"]
+	path = vim/packages/syntastic
+	url = https://github.com/scrooloose/syntastic
