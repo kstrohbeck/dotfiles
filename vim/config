@@ -10,6 +10,10 @@ call pathogen#infect('packages/{}')
 call pathogen#helptags()
 
 " =============================================================================
+"   Package settings
+" =============================================================================
+
+" =============================================================================
 "   General
 " =============================================================================
 
@@ -24,6 +28,9 @@ set listchars=tab:»»,trail:·,nbsp:~   " Set characters to represent whitespac
 
 set nowrap
 set linebreak
+
+set foldmethod=syntax
+set foldcolumn=1
 
 set nobackup
 set noswapfile
@@ -75,18 +82,28 @@ noremap ; :
 vnoremap < <gv
 vnoremap > >gv
 
-" Format paragraphs
+" Format paragraphs.
 vmap Q gq
 nmap Q gqap
 
-" Allow sudo editing
+" Allow sudo editing.
 cmap w!! %!sudo tee > /dev/null %
+
+" Use space for folding and unfolding.
+nnoremap <Space> za
 
 " =============================================================================
 "   Leader
 " =============================================================================
 
 let mapleader=','
+
+" Set map toggle for mathematic.
+map <Leader>km :set keymap=mathematic<CR>
+map <Leader>kn :set keymap=<CR>
+
+" Map undotree.
+nnoremap <Leader>u :UndotreeToggle<CR>
 
 " =============================================================================
 "   Miscellaneous
@@ -95,8 +112,10 @@ let mapleader=','
 set t_Co=256                                        " Set vim to 256 color mode
 set background=dark
 
-autocmd BufRead */vim/config set filetype=vim        " Get syntax on this vimrc
+" Set syntax for dotfiles style configs.
+autocmd BufRead */vim/config set filetype=vim
 autocmd BufRead */fish/config set filetype=fish
+autocmd BufRead */irssi/config set filetype=conf
 
 " We can't use fish, because it isn't POSIX compliant.
 if &shell =~# 'fish$'

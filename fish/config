@@ -1,6 +1,21 @@
-set fish_greeting
+# Load fish packages.
 set FISH_CONF (dirname (status -f))
 . $FISH_CONF/packages/virtualfish/virtual.fish
 . $FISH_CONF/packages/testpkg/test.fish
 eval sh $FISH_CONF/packages/base16/base16-default.dark.sh
+
+# Get rid of fish's motd/greeting.
+set fish_greeting
+
+# Use less for colored man pages.
+# set -xU LESS_TERMCAP_mb (printf "\e[01;31m")
+set -Ux LESS_TERMCAP_md \e\[1\x3B31m
+set -Ux LESS_TERMCAP_mb \e\[1\x3B32m
+set -Ux LESS_TERMCAP_so \e\[1\x3B35m
+set -Ux LESS_TERMCAP_us \e\[1\x3B33m
+set -Ux LESS_TERMCAP_me \e\[0m
+set -Ux LESS_TERMCAP_se \e\[0m
+set -Ux LESS_TERMCAP_ue \e\[0m
+
+# Always use tmux.
 tmux attach
