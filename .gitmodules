@@ -1,51 +1,54 @@
-[submodule "vim/pathogen"]
+[submodule "vim/pkg/pathogen"]
 	path = vim/packages/pathogen
 	url = https://github.com/tpope/vim-pathogen
-[submodule "vim/base16"]
+[submodule "vim/pkg/base16"]
 	path = vim/packages/base16
 	url = https://github.com/chriskempson/base16-vim
-[submodule "vim/sensible"]
+[submodule "vim/pkg/sensible"]
 	path = vim/packages/sensible
 	url = https://github.com/tpope/vim-sensible
-[submodule "vim/csapprox"]
+[submodule "vim/pkg/csapprox"]
 	path = vim/packages/csapprox
 	url = https://github.com/godlygeek/csapprox
 [submodule "fish/base16"]
 	path = fish/packages/base16
 	url = https://github.com/chriskempson/base16-shell
-[submodule "vim/delimitMate"]
+[submodule "vim/pkg/delimitMate"]
 	path = vim/packages/delimitMate
 	url = https://github.com/Raimondi/delimitMate
-[submodule "vim/repeat"]
+[submodule "vim/pkg/repeat"]
 	path = vim/packages/repeat
 	url = https://github.com/tpope/vim-repeat
-[submodule "vim/numbers"]
+[submodule "vim/pkg/numbers"]
 	path = vim/packages/numbers
 	url = https://github.com/myusuf3/numbers.vim
-[submodule "fish/virtualfish"]
+[submodule "fish/pkg/virtualfish"]
 	path = fish/packages/virtualfish
 	url = https://github.com/adambrenecki/virtualfish
-[submodule "vim/fish"]
+[submodule "vim/pkg/fish"]
 	path = vim/packages/fish
 	url = https://github.com/dag/vim-fish
-[submodule "vim/syntastic"]
+[submodule "vim/pkg/syntastic"]
 	path = vim/packages/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule "vim/mathematic"]
+[submodule "vim/pkg/mathematic"]
 	path = vim/packages/mathematic
 	url = https://github.com/Rykka/mathematic.vim
-[submodule "vim/ctrlp"]
+[submodule "vim/pkg/ctrlp"]
 	path = vim/packages/ctrlp
 	url = https://github.com/kien/ctrlp.vim
-[submodule "vim/characterize"]
+[submodule "vim/pkg/characterize"]
 	path = vim/packages/characterize
 	url = https://github.com/tpope/vim-characterize
-[submodule "vim/undotree"]
+[submodule "vim/pkg/undotree"]
 	path = vim/packages/undotree
 	url = https://github.com/mbbill/undotree
-[submodule "vim/ultisnips"]
+[submodule "vim/pkg/ultisnips"]
 	path = vim/packages/ultisnips
 	url = https://github.com/SirVer/ultisnips
-[submodule "vim/commentary"]
+[submodule "vim/pkg/commentary"]
 	path = vim/packages/commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "vim/pkg/etc/snippets"]
+	path = vim/etc/snippets
+	url = https://github.com/honza/vim-snippets
