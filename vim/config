@@ -10,6 +10,10 @@ call pathogen#infect('packages/{}')
 call pathogen#helptags()
 
 " =============================================================================
+"   Package settings
+" =============================================================================
+
+" =============================================================================
 "   General
 " =============================================================================
 
@@ -86,6 +90,10 @@ cmap w!! %!sudo tee > /dev/null %
 
 let mapleader=','
 
+" Set map toggle for mathematic.
+map <Leader>km :set keymap=mathematic<CR>
+map <Leader>kn :set keymap=<CR>
+
 " =============================================================================
 "   Miscellaneous
 " =============================================================================
@@ -93,7 +101,10 @@ let mapleader=','
 set t_Co=256                                        " Set vim to 256 color mode
 set background=dark
 
-autocmd BufRead */vim/config set filetype=vim        " Get syntax on this vimrc
+" Set syntax for dotfiles style configs.
+autocmd BufRead */vim/config set filetype=vim
+autocmd BufRead */fish/config set filetype=fish
+autocmd BufRead */irssi/config set filetype=conf
 
 " Use after to set stuff that needs to be done on load.
 autocmd VimEnter * :colorscheme base16-default
