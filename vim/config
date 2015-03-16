@@ -29,6 +29,9 @@ set listchars=tab:»»,trail:·,nbsp:~   " Set characters to represent whitespac
 set nowrap
 set linebreak
 
+set foldmethod=syntax
+set foldcolumn=1
+
 set nobackup
 set noswapfile
 
@@ -77,12 +80,15 @@ noremap ; :
 vnoremap < <gv
 vnoremap > >gv
 
-" Format paragraphs
+" Format paragraphs.
 vmap Q gq
 nmap Q gqap
 
-" Allow sudo editing
+" Allow sudo editing.
 cmap w!! %!sudo tee > /dev/null %
+
+" Use space for folding and unfolding.
+nnoremap <Space> za
 
 " =============================================================================
 "   Leader
@@ -93,6 +99,9 @@ let mapleader=','
 " Set map toggle for mathematic.
 map <Leader>km :set keymap=mathematic<CR>
 map <Leader>kn :set keymap=<CR>
+
+" Map undotree.
+nnoremap <Leader>u :UndotreeToggle<CR>
 
 " =============================================================================
 "   Miscellaneous

@@ -37,3 +37,6 @@
 [submodule "vim/characterize"]
 	path = vim/packages/characterize
 	url = https://github.com/tpope/vim-characterize
+[submodule "vim/undotree"]
+	path = vim/packages/undotree
+	url = https://github.com/mbbill/undotree
