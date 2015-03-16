@@ -1,0 +1,15 @@
+snippet query "Create query."
+$1Query = new Query(
+	datasource = ${2:Application.ds},
+	sql = '
+	$3
+');$0
+$1Result = $1Query.execute().getResult();
+endsnippet
+
+snippet param "Add query parameter."
+$1Query.addParam(
+	name = "$2",
+	value = ${3:$2},
+	cfsqltype = "CF_SQL_$4");$0
+endsnippet

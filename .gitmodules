@@ -52,3 +52,6 @@
 [submodule "vim/pkg/snippets"]
 	path = vim/packages/snippets
 	url = https://github.com/honza/vim-snippets
+[submodule "vim/pkg/cf-utils"]
+	path = vim/packages/cf-utils
+	url = https://github.com/davejlong/cf-utils.vim
