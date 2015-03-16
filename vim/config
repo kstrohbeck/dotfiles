@@ -28,6 +28,8 @@ set linebreak
 set nobackup
 set noswapfile
 
+set foldmethod=syntax
+
 " Set pastetoggle?
 
 " =============================================================================
