@@ -49,6 +49,6 @@
 [submodule "vim/pkg/commentary"]
 	path = vim/packages/commentary
 	url = https://github.com/tpope/vim-commentary
-[submodule "vim/pkg/etc/snippets"]
-	path = vim/etc/snippets
+[submodule "vim/pkg/snippets"]
+	path = vim/packages/snippets
 	url = https://github.com/honza/vim-snippets
