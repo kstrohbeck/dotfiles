@@ -43,3 +43,9 @@
 [submodule "vim/undotree"]
 	path = vim/packages/undotree
 	url = https://github.com/mbbill/undotree
+[submodule "vim/ultisnips"]
+	path = vim/packages/ultisnips
+	url = https://github.com/SirVer/ultisnips
+[submodule "vim/commentary"]
+	path = vim/packages/commentary
+	url = https://github.com/tpope/vim-commentary
