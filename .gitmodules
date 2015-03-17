@@ -61,3 +61,6 @@
 [submodule "vim/packages/coloresque"]
 	path = vim/packages/coloresque
 	url = https://github.com/gorodinskiy/vim-coloresque
+[submodule "vim/packages/abolish"]
+	path = vim/packages/abolish
+	url = https://github.com/tpope/vim-abolish
