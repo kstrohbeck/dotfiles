@@ -1,57 +1,60 @@
-[submodule "vim/pkg/pathogen"]
+[submodule "vim/packages/pathogen"]
 	path = vim/packages/pathogen
 	url = https://github.com/tpope/vim-pathogen
-[submodule "vim/pkg/base16"]
+[submodule "vim/packages/base16"]
 	path = vim/packages/base16
 	url = https://github.com/chriskempson/base16-vim
-[submodule "vim/pkg/sensible"]
+[submodule "vim/packages/sensible"]
 	path = vim/packages/sensible
 	url = https://github.com/tpope/vim-sensible
-[submodule "vim/pkg/csapprox"]
+[submodule "vim/packages/csapprox"]
 	path = vim/packages/csapprox
 	url = https://github.com/godlygeek/csapprox
-[submodule "fish/base16"]
+[submodule "fish/packages/base16"]
 	path = fish/packages/base16
 	url = https://github.com/chriskempson/base16-shell
-[submodule "vim/pkg/delimitMate"]
+[submodule "vim/packages/delimitMate"]
 	path = vim/packages/delimitMate
 	url = https://github.com/Raimondi/delimitMate
-[submodule "vim/pkg/repeat"]
+[submodule "vim/packages/repeat"]
 	path = vim/packages/repeat
 	url = https://github.com/tpope/vim-repeat
-[submodule "vim/pkg/numbers"]
+[submodule "vim/packages/numbers"]
 	path = vim/packages/numbers
 	url = https://github.com/myusuf3/numbers.vim
-[submodule "fish/pkg/virtualfish"]
+[submodule "fish/packages/virtualfish"]
 	path = fish/packages/virtualfish
 	url = https://github.com/adambrenecki/virtualfish
-[submodule "vim/pkg/fish"]
+[submodule "vim/packages/fish"]
 	path = vim/packages/fish
 	url = https://github.com/dag/vim-fish
-[submodule "vim/pkg/syntastic"]
+[submodule "vim/packages/syntastic"]
 	path = vim/packages/syntastic
 	url = https://github.com/scrooloose/syntastic
-[submodule "vim/pkg/mathematic"]
+[submodule "vim/packages/mathematic"]
 	path = vim/packages/mathematic
 	url = https://github.com/Rykka/mathematic.vim
-[submodule "vim/pkg/ctrlp"]
+[submodule "vim/packages/ctrlp"]
 	path = vim/packages/ctrlp
 	url = https://github.com/kien/ctrlp.vim
-[submodule "vim/pkg/characterize"]
+[submodule "vim/packages/characterize"]
 	path = vim/packages/characterize
 	url = https://github.com/tpope/vim-characterize
-[submodule "vim/pkg/undotree"]
+[submodule "vim/packages/undotree"]
 	path = vim/packages/undotree
 	url = https://github.com/mbbill/undotree
-[submodule "vim/pkg/ultisnips"]
+[submodule "vim/packages/ultisnips"]
 	path = vim/packages/ultisnips
 	url = https://github.com/SirVer/ultisnips
-[submodule "vim/pkg/commentary"]
+[submodule "vim/packages/commentary"]
 	path = vim/packages/commentary
 	url = https://github.com/tpope/vim-commentary
-[submodule "vim/pkg/snippets"]
+[submodule "vim/packages/snippets"]
 	path = vim/packages/snippets
 	url = https://github.com/honza/vim-snippets
-[submodule "vim/pkg/cf-utils"]
+[submodule "vim/packages/cf-utils"]
 	path = vim/packages/cf-utils
 	url = https://github.com/davejlong/cf-utils.vim
+[submodule "vim/packages/surround"]
+	path = vim/packages/surround
+	url = https://github.com/tpope/vim-surround
