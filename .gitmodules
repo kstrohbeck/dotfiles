@@ -64,3 +64,9 @@
 [submodule "vim/packages/abolish"]
 	path = vim/packages/abolish
 	url = https://github.com/tpope/vim-abolish
+[submodule "vim/packages/YouCompleteMe"]
+	path = vim/packages/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe
+[submodule "vim/packages/exchange"]
+	path = vim/packages/exchange
+	url = https://github.com/tommcdo/vim-exchange
