@@ -58,3 +58,6 @@
 [submodule "vim/packages/surround"]
 	path = vim/packages/surround
 	url = https://github.com/tpope/vim-surround
+[submodule "vim/packages/coloresque"]
+	path = vim/packages/coloresque
+	url = https://github.com/gorodinskiy/vim-coloresque
