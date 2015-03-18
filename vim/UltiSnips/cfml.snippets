@@ -1,21 +1,72 @@
-snippet if "cfif tags" b
+priority -50
+
+extends html
+
+
+snippet cfscript "<cfscript>" b
+<cfscript>
+	${0:${VISUAL:\/* script *\/}}
+</cfscript>
+endsnippet
+
+
+snippet cfset "<cfset ...>" b
+<cfset $1=$2>
+endsnippet
+
+
+snippet cfif "<cfif ...>" b
 <cfif ${1:condition}>
-	$0
+	${0:${VISUAL:<!--- code --->}}
 </cfif>
 endsnippet
+
+
+snippet cfelseif "<cfelseif ...>" b
+<cfelseif ${1:condition}>
+	${0:${VISUAL:<!--- code --->}}
+endsnippet
+
+
+snippet cfelse "<cfelse ...>" b
+<cfelse>
+	${0:${VISUAL:<!--- then --->}}
+endsnippet
+
+
+snippet if "if ..." b
+if (${1:/* condition */}) \{
+	${0:${VISUAL:\/* then *\/}}
+}
+endsnippet
+
+
+snippet else "else" w
+else \{
+	${0:${VISUAL:\/* then *\/}}
+}
+endsnippet
+
 
 snippet query "Create query."
 $1Query = new Query(
 	datasource = ${3:Application.ds},
 	sql = '
-	$2
-');$0
+	$2');$0
 $1 = $1Query.execute().getResult();
 endsnippet
 
+
 snippet param "Add query parameter."
-$1Query.addParam(
+`!v LastQueryName()`.addParam(
 	value = $2,
 	name = "${4:$2}",
 	cfsqltype = "CF_SQL_$3");$0
+endsnippet
+
+
+snippet component "component ..." b
+component \{
+	${0:${VISUAL:\/* content *\/}}
+}
 endsnippet

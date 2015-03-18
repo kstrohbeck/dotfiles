@@ -13,7 +13,7 @@ call pathogen#helptags()
 "                              Package settings                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-let g:UltiSnipsExpandTrigger="<C-Tab>"
+let g:UltiSnipsExpandTrigger="<c-j>"
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  General                                   "
@@ -129,3 +129,17 @@ endif
 " Use after to set stuff that needs to be done on load.
 autocmd VimEnter * :colorscheme base16-default
 autocmd VimEnter * :CSApprox
+
+function LastQueryName()
+    let i = 1
+    let matchName = ""
+    while i < line(".")
+        let m = match(getline(i), '\v\w+.*\=.*new Query')
+        if m > -1
+            let matchName = matchstr(getline(i), '\v\w+', m)
+        endif
+        let i = i + 1
+    endwhile
+    return matchName
+endfunction
+
