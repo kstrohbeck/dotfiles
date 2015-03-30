@@ -73,3 +73,12 @@
 [submodule "vim/packages/dart"]
 	path = vim/packages/dart
 	url = https://github.com/dart-lang/dart-vim-plugin
+[submodule "vim/packages/rust"]
+	path = vim/packages/rust
+	url = https://github.com/rust-lang/rust.vim
+[submodule "vim/packages/emmet"]
+	path = vim/packages/emmet
+	url = https://github.com/mattn/emmet-vim
+[submodule "vim/packages/unimpaired"]
+	path = vim/packages/unimpaired
+	url = https://github.com/tpope/vim-unimpaired
