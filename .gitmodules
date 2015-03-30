@@ -34,9 +34,6 @@
 [submodule "vim/packages/mathematic"]
 	path = vim/packages/mathematic
 	url = https://github.com/Rykka/mathematic.vim
-[submodule "vim/packages/ctrlp"]
-	path = vim/packages/ctrlp
-	url = https://github.com/kien/ctrlp.vim
 [submodule "vim/packages/characterize"]
 	path = vim/packages/characterize
 	url = https://github.com/tpope/vim-characterize
