@@ -79,3 +79,6 @@
 [submodule "vim/packages/unimpaired"]
 	path = vim/packages/unimpaired
 	url = https://github.com/tpope/vim-unimpaired
+[submodule "vim/packages/unite"]
+	path = vim/packages/unite
+	url = https://github.com/Shougo/unite.vim
