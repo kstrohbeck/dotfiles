@@ -7,8 +7,12 @@ set FISH_CONF (dirname (status -f))
 # Get rid of fish's motd/greeting.
 set fish_greeting
 
-# Make sure terminal is xterm-256color
-set -gx TERM xterm-256color
+# Make sure terminal is correct
+if set -q $TMUX
+    set -gx TERM screen-256color
+else
+    set -gx TERM xterm-256color
+end
 
 function fish_prompt
     set_color white
