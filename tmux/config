@@ -3,6 +3,8 @@ set-option -g renumber-windows on
 set-window-option -g mode-keys vi
 new-session -s Home
 
+# run-shell "/usr/bin/python /home/kyle/.dotfiles/tmux/packages/modality/modality.py -c -p empty insert"
+
 ## Colorscheme - base16
 ## Try to find some way to move this into its own file.
 

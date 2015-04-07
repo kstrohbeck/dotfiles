@@ -85,3 +85,6 @@
 [submodule "vim/packages/docker"]
 	path = vim/packages/docker
 	url = https://github.com/ekalinin/Dockerfile.vim
+[submodule "tmux/packages/modality"]
+	path = tmux/packages/modality
+	url = https://github.com/mtl/tmux-modality
