@@ -82,3 +82,6 @@
 [submodule "vim/packages/unite"]
 	path = vim/packages/unite
 	url = https://github.com/Shougo/unite.vim
+[submodule "vim/packages/docker"]
+	path = vim/packages/docker
+	url = https://github.com/ekalinin/Dockerfile.vim
