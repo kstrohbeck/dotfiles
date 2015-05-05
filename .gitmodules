@@ -88,3 +88,9 @@
 [submodule "tmux/packages/modality"]
 	path = tmux/packages/modality
 	url = https://github.com/mtl/tmux-modality
+[submodule "vim/packages/taskpaper"]
+	path = vim/packages/taskpaper
+	url = https://github.com/davidoc/taskpaper.vim
+[submodule "vim/packages/python"]
+	path = vim/packages/python
+	url = https://github.com/hdima/python-syntax
