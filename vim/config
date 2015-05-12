@@ -17,6 +17,8 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 
 nnoremap <C-p> :Unite file_rec/async<cr>
 
+let python_highlight_all = 1
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  General                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

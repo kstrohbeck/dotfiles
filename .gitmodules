@@ -94,3 +94,6 @@
 [submodule "vim/packages/python"]
 	path = vim/packages/python
 	url = https://github.com/hdima/python-syntax
+[submodule "vim/packages/swift"]
+	path = vim/packages/swift
+	url = https://github.com/kballard/vim-swift

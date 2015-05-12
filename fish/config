@@ -45,7 +45,7 @@ tmux attach
 
 # Functions.
 function ls
-    /bin/ls --color -I '__pycache__' $argv;
+    /bin/ls --color -I '__pycache__' -I '*.pyc' $argv;
 end
 
 function tree
