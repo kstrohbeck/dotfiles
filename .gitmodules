@@ -97,3 +97,15 @@
 [submodule "vim/packages/swift"]
 	path = vim/packages/swift
 	url = https://github.com/kballard/vim-swift
+[submodule "vim/packages/sleuth"]
+	path = vim/packages/sleuth
+	url = https://github.com/tpope/vim-sleuth
+[submodule "vim/packages/indent-guides"]
+	path = vim/packages/indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides
+[submodule "vim/packages/go"]
+	path = vim/packages/go
+	url = https://github.com/fatih/vim-go
+[submodule "vim/packages/fugitive"]
+	path = vim/packages/fugitive
+	url = https://github.com/tpope/vim-fugitive
