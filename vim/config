@@ -19,6 +19,13 @@ nnoremap <C-p> :Unite file_rec/async<cr>
 
 let python_highlight_all = 1
 
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_auto_colors = 0
+
+let g:sleuth_listchars='trail:·,nbsp:~'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  General                                   "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -34,6 +41,7 @@ set listchars=tab:»»,trail:·,nbsp:~   " Set characters to represent whitespac
 
 set nowrap
 set linebreak
+set tabstop=8
 
 set foldmethod=syntax
 set foldcolumn=1
@@ -49,11 +57,11 @@ set foldmethod=syntax
 "                                Indentation                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set smartindent
+" set smartindent 
 
-set tabstop=4
-set shiftwidth=4
-set expandtab
+" set tabstop=4
+" set shiftwidth=4
+" set expandtab
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                  Mappings                                  "
@@ -124,6 +132,9 @@ set background=dark
 autocmd BufRead */vim/config set filetype=vim
 autocmd BufRead */fish/config set filetype=fish
 autocmd BufRead */irssi/config set filetype=conf
+
+" Open all folds by default.
+autocmd BufRead * normal zR
 
 " We can't use fish, because it isn't POSIX compliant.
 if &shell =~# 'fish$'

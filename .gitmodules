@@ -99,7 +99,7 @@
 	url = https://github.com/kballard/vim-swift
 [submodule "vim/packages/sleuth"]
 	path = vim/packages/sleuth
-	url = https://github.com/tpope/vim-sleuth
+	url = https://github.com/kstrohbeck/vim-sleuth
 [submodule "vim/packages/indent-guides"]
 	path = vim/packages/indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
