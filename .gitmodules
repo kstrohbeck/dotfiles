@@ -109,3 +109,6 @@
 [submodule "vim/packages/fugitive"]
 	path = vim/packages/fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/packages/coffeescript"]
+	path = vim/packages/coffeescript
+	url = https://github.com/kchmck/vim-coffee-script
